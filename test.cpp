@@ -59,21 +59,19 @@ int main() {
             cout << "c: " << c << endl;
             while(c != '(') { 
                 postfix.push(c);
-                c = temp.pop(); // here is the problem child
+                c = temp.pop(); 
                 cout << "c now: " << c << endl;
-                //i think we need an if statement to stop it if temp is empty
-                //if (temp.isEmpty()) {
-                    //break;
-                //}
+
             }
         } else { 
             cout << "current token is operand" << endl;
+            temp.push(infix.pop()); //so plus and minus just get stuck in temp. where do i move them to postifix?
             while(temp.readTop() == '/' || temp.readTop() == '*') {
                 cout << "while loop activated" << endl; //testing
                 char c2 = temp.pop();
                 postfix.push(c2);
             }
-            temp.push(infix.pop()); //should this be temp.push? //if it is then 2 gets ctrl alt deleted
+            
         }
 
         //testing
@@ -95,12 +93,12 @@ int main() {
     }*/
 
     cout << "final stack results" << endl << "infix: ";
-        infix.print();
-        cout << endl << "temp: ";
-        temp.print();
-        cout << endl << "postfix: ";
-        postfix.print();
-        cout << endl << endl;
+    infix.print();
+    cout << endl << "temp: ";
+    temp.print();
+    cout << endl << "postfix: ";
+    postfix.print();
+    cout << endl << endl;
     
     cout << "final product should look like 3 4 + 2 *" << endl;
     //cout << "final product should look like 5 3 * 2 +" << endl;
