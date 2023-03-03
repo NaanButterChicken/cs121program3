@@ -1,0 +1,80 @@
+Script started on 2023-02-28 11:54:21-08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="103" LINES="33"]
+]0;prplsprinkle@tyrone: ~/cs121/assignments/prog3[01;32mprplsprinkle@tyrone[00m:[01;34m~/cs121/assignments/prog3[00m$ ./a.out
+enter char: (
+enter another? y/n y
+enter char: 2
+enter another? y/n y
+enter char: +
+enter another? y/n y
+enter char: 3
+enter another? y/n y
+enter char: )
+enter another? y/n * y
+enter char: *
+enter another? y/n y
+enter char: 4
+enter another? y/n n
+( 2 + 3 ) * 4 
+
+postfix: 2 3 + 4 * 
+want to run another? y/n y
+enter char: 2
+enter another? y/n y
+enter char: +
+enter another? y/n y
+enter char: (
+enter another? y/n y
+enter char: (
+enter another? y/n y
+enter char: 5
+enter another? y/n y
+enter char: )
+enter another? y/n y
+enter char: *
+enter another? y/n y
+enter char: 3
+enter another? y/n y
+enter char: )
+enter another? y/n n
+2 + ( ( 5 ) * 3 ) 
+
+postfix: 2 5 3 * + 
+want to run another? y/n y
+enter char: 2
+enter another? y/n y
+enter char: *
+enter another? y/n y
+enter char: (
+enter another? y/n y
+enter char: (
+enter another? y/n y
+enter char: 3
+enter another? y/n y
+enter char: +
+enter another? y/n y
+enter char: 4
+enter another? y/n y
+enter char: *
+enter another? y/n y
+enter char: 7
+enter another? y/n y
+enter char: )
+enter another? y/n y
+enter char: /
+enter another? y/n y
+enter char: 2
+enter another? y/n y
+enter char: +
+enter another? y/n y
+enter char: 4
+enter another? y/n y
+enter char: )
+enter another? y/n n
+2 * ( ( 3 + 4 * 7 ) / 2 + 4 ) 
+
+postfix: 2 3 4 7 * + 2 / 4 + * 
+want to run another? y/n n
+]0;prplsprinkle@tyrone: ~/cs121/assignments/prog3[01;32mprplsprinkle@tyrone[00m:[01;34m~/cs121/assignments/prog3[00m$ exit
+exit
+
+Script done on 2023-02-28 11:57:06-08:00 [COMMAND_EXIT_CODE="0"]

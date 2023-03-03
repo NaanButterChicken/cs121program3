@@ -69,7 +69,7 @@ char linkedList::deleteNodeBack() {
 void linkedList::print() {
     node * n = head;
     while (n != NULL) {
-        cout << n->token;
+        cout << n->token << " ";
         n = n->next;
     }
 }
